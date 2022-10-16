@@ -59,12 +59,17 @@
                                 color: #303030;
                                 font-size: 20px;
                                 font-weight: 600;
+                                width: 170px;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
                             }
         
                             .last-listenen-album-artist {
                                 color: #00000093;
                                 font-size: 17px;
                                 font-weight: 500;
+                                width: 170px;
                             }
                         }
                     }
@@ -126,7 +131,7 @@
                             .player-playback-bar-content {
                                 position: relative;
                                 background-color: #c7c5c5;
-                                width: 200px;
+                                width: 120px;
                                 height: 10px;
                                 border-radius: 100px;
             
