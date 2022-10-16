@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     padding: 40px;
-    width: 300px;
+    width: 350px;
     height: 100vh;
 
     .navbar-container {
@@ -54,6 +54,27 @@
                     font-weight: 500;
                     color: #00000093;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    #navbar {
+        overflow: auto;
+
+        &::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            border-color: transparent;
+            border-radius: 1em;
+        }
+    
+        &:hover {
+    
+            &::-webkit-scrollbar-thumb {
+                background-color: #c7c5c5;
+                border-color: #fdfdfd;
+                border-radius: 100px;
             }
         }
     }
