@@ -11,7 +11,7 @@ export default function PopularView() {
                 <div className={styles['popular-albums']}>
                     <div className={styles['popular-albums-item']}>
                         <div style={{position: 'absolute', width: '100%', height: '100%', zIndex: '1'}}></div>
-                        <Image className={styles['popular-albums-cover-image']} src="/images/albums/heartbeat.jpg" width="300" height="350" />
+                        <Image className={styles['popular-albums-cover-image']} src="/images/albums/heartbeat.jpg" width="250" height="300" />
                         <div className={styles['popular-albums-artist']}>
                             <div style={{position: 'relative', width: '35px', height: '35px'}}>
                                 <div style={{position: 'absolute', width: '100%', height: '100%', zIndex: '1'}}></div>
@@ -22,7 +22,7 @@ export default function PopularView() {
                     </div>
                     <div className={styles['popular-albums-item']}>
                         <div style={{position: 'absolute', width: '100%', height: '100%', zIndex: '1'}}></div>
-                        <Image className={styles['popular-albums-cover-image']} src="/images/albums/revival.jpg" width="300" height="350" />
+                        <Image className={styles['popular-albums-cover-image']} src="/images/albums/revival.jpg" width="250" height="300" />
                         <div className={styles['popular-albums-artist']}>
                             <div style={{position: 'relative', width: '35px', height: '35px'}}>
                                 <div style={{position: 'absolute', width: '100%', height: '100%', zIndex: '1'}}></div>
