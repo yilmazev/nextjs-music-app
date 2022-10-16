@@ -1,11 +1,11 @@
 #popular {
     .popular-container {
         .popular-title {
-            margin: 0 0 1em 0;
+            margin: 0 0 20px 0;
 
             .popular-title-text {
                 color: #303030;
-                font-size: 1.8em;
+                font-size: 29px;
                 font-weight: 500;
 
                 b {
@@ -17,25 +17,31 @@
         .popular-albums {
             display: flex;
             flex-direction: column;
-            gap: 1em;
+            gap: 15px;
 
             .popular-albums-item {
                 position: relative;
+                transition: .3s all;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    cursor: pointer;
+                }
 
                 .popular-albums-cover-image {
-                    border-radius: 1.6em;
+                    border-radius: 26px;
                 }
                 
                 .popular-albums-artist {
                     position: absolute;
-                    left: 1em;
-                    bottom: 1em;
+                    left: 15px;
+                    bottom: 15px;
                     display: flex;
                     align-items: center;
-                    gap: .5em;
+                    gap: 10px;
                     background-color: #fff;
-                    border-radius: 50em;
-                    padding: .5em;
+                    border-radius: 100px;
+                    padding: 10px;
 
                     .popular-albums-artist-avatar-image {
                         border-radius: 50%;
@@ -43,7 +49,7 @@
 
                     .popular-albums-artist-full-name {
                         color: #303030;
-                        font-size: 1em;
+                        font-size: 16px;
                         font-weight: 500;
                     }
                 }

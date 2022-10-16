@@ -6,14 +6,14 @@
     justify-content: center;
     background-color: #fff;
     box-shadow: 0px -6px 6px -1px #00000009;
-    padding: 2em 3em;
+    padding: 30px 40px;
     width: 100%;
 
     .player-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 5em;
+        gap: 60px;
         
         .player-column {
             display: flex;
@@ -22,7 +22,7 @@
             .player-album {
                 display: flex;
                 align-items: center;
-                gap: 1.6em;
+                gap: 20px;
 
                 .player-album-image {
                     border-radius: 50%;
@@ -31,17 +31,17 @@
                 .player-album-text {
                     display: flex;
                     flex-direction: column;
-                    gap: .5em;
+                    gap: 5px;
 
                     .player-album-name {
                         color: #303030;
-                        font-size: 1.3em;
+                        font-size: 20px;
                         font-weight: 600;
                     }
 
                     .player-album-artist {
                         color: #00000093;
-                        font-size: 1em;
+                        font-size: 16px;
                         font-weight: 500;
                     }
                 }
@@ -50,10 +50,10 @@
             .player-controls {
                 display: flex;
                 align-items: center;
-                gap: .5em;
+                gap: 10px;
 
                 .player-previous-icon {
-                    width: 2.5em;
+                    width: 45px;
                     fill: #c7c5c5;
                     cursor: pointer;
                 }
@@ -64,12 +64,12 @@
                     align-items: center;
                     background-color: #fff;
                     border: 1px solid #dfdddd6e;
-                    border-radius: 50em;
-                    padding: .3em;
+                    border-radius: 50%;
+                    padding: 10px;
                     cursor: pointer;
 
                     .player-play-icon {
-                        width: 2.5em;
+                        width: 40px;
                         fill: #1DA1F2;
                     }
                 }
@@ -80,18 +80,18 @@
                     align-items: center;
                     background-color: #1DA1F2;
                     border: 1px solid transparent;
-                    border-radius: 50em;
-                    padding: .3em;
+                    border-radius: 50%;
+                    padding: 10px;
                     cursor: pointer;
 
                     .player-pause-icon {
-                        width: 2.5em;
+                        width: 40px;
                         fill: #fff;
                     }
                 }
 
                 .player-next-icon {
-                    width: 2.5em;
+                    width: 45px;
                     fill: #c7c5c5;
                     cursor: pointer;
                 }
@@ -104,7 +104,7 @@
 
                 .player-playback-time {
                     color: #c7c5c5;
-                    font-size: 1em;
+                    font-size: 16px;
                     font-weight: 500;
 
                     &.active {
@@ -117,7 +117,7 @@
                     background-color: #c7c5c5;
                     width: 300px;
                     height: 10px;
-                    border-radius: 1em;
+                    border-radius: 100px;
 
                     .player-playback-bar {
                         position: absolute;
@@ -125,7 +125,7 @@
                         left: 0;
                         background-color: #1DA1F2;
                         height: 100%;
-                        border-radius: 1em;
+                        border-radius: 100px;
 
                         .player-playback-bar-dot {
                             position: absolute;
@@ -135,7 +135,7 @@
                             width: 21px;
                             height: 23px;
                             border: 1px solid #dfdddd6e;
-                            border-radius: 50em;
+                            border-radius: 100px;
                             visibility: hidden;
                             opacity: 0;
                         }
@@ -156,10 +156,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 1em;
+                gap: 15px;
 
                 .player-sound-icon {
-                    width: 1.7em;
+                    width: 28px;
                     fill: #303030;
                 }
 
@@ -168,7 +168,7 @@
                     background-color: #c7c5c5;
                     width: 100px;
                     height: 10px;
-                    border-radius: 1em;
+                    border-radius: 100px;
 
                     .player-sound-progress-bar {
                         position: absolute;
@@ -176,7 +176,7 @@
                         left: 0;
                         background-color: #1DA1F2;
                         height: 100%;
-                        border-radius: 1em;
+                        border-radius: 100px;
 
                         .player-sound-progress-bar-dot {
                             position: absolute;
@@ -186,7 +186,7 @@
                             width: 21px;
                             height: 23px;
                             border: 1px solid #dfdddd6e;
-                            border-radius: 50em;
+                            border-radius: 100px;
                             visibility: hidden;
                             opacity: 0;
                         }

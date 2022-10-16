@@ -12,7 +12,7 @@
         .welcome-avatar-column {
             display: flex;
             align-items: center;
-            gap: 1em;
+            gap: 20px;
 
             .welcome-avatar-image {
                 border-radius: 50%
@@ -20,7 +20,7 @@
 
             .welcome-avatar-text {
                 color: #303030;
-                font-size: 1.5em;
+                font-size: 25px;
                 font-weight: 500;
 
                 b {
@@ -36,11 +36,11 @@
             gap: .8em;
             background-color: #fff;
             box-shadow: 0px 6px 6px -1px #00000009;
-            border-radius: 0.8em;
+            border-radius: 10px;
             padding: 1em;
 
             .welcome-search-icon {
-                width: 1.8em;
+                width: 28px;
                 fill: #c7c5c5;
                 stroke: #c7c5c5;
                 stroke-width: .5px;
@@ -48,9 +48,9 @@
 
             .welcome-search-bar {
                 color: #303030;
-                font-size: 1.1em;
+                font-size: 19px;
                 font-weight: 500;
-                width: 20em;
+                width: 350px;
                 
                 &::placeholder {
                     color: #c7c5c5;

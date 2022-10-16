@@ -3,11 +3,11 @@
 
     .listenen-container {
         .listenen-title {
-            margin: 0 0 1em 0;
+            margin: 0 0 20px 0;
 
             .listenen-title-text {
                 color: #303030;
-                font-size: 1.8em;
+                font-size: 29px;
                 font-weight: 500;
 
                 b {
@@ -19,7 +19,7 @@
         .last-listenen {
             display: flex;
             flex-direction: column;
-            gap: 1em;
+            gap: 15px;
             width: 100%;
 
             .last-listenen-item {
@@ -27,16 +27,24 @@
                 justify-content: space-between;
                 align-items: center;
                 background-color: #fff;
+                border: 1px solid transparent;
                 box-shadow: 0px 6px 6px -1px #00000009;
-                border-radius: 0.8em;
-                padding: 1em;
+                border-radius: 10px;
+                padding: 15px;
                 width: 100%;
+                transition: .2s all;
+
+                &:hover {
+                    border-color: #dfdddd6e;
+                    box-shadow: 0px 6px 6px -1px #00000018;
+                    cursor: pointer;
+                }
 
                 .last-listenen-column {
                     .last-listenen-album {
                         display: flex;
                         align-items: center;
-                        gap: 1.6em;
+                        gap: 25px;
         
                         .last-listenen-album-image {
                             border-radius: 50%;
@@ -45,17 +53,17 @@
                         .last-listenen-album-text {
                             display: flex;
                             flex-direction: column;
-                            gap: .5em;
+                            gap: 10px;
         
                             .last-listenen-album-name {
                                 color: #303030;
-                                font-size: 1.3em;
+                                font-size: 20px;
                                 font-weight: 600;
                             }
         
                             .last-listenen-album-artist {
                                 color: #00000093;
-                                font-size: 1em;
+                                font-size: 17px;
                                 font-weight: 500;
                             }
                         }
@@ -64,7 +72,7 @@
                     .last-listenen-player {
                         display: flex;
                         align-items: center;
-                        gap: 1.5em;
+                        gap: 50px;
 
                         .last-listenen-controls {
                             .last-listenen-play-content {
@@ -73,12 +81,12 @@
                                 align-items: center;
                                 background-color: #fff;
                                 border: 1px solid #dfdddd6e;
-                                border-radius: 50em;
-                                padding: .3em;
+                                border-radius: 100px;
+                                padding: 10px;
                                 cursor: pointer;
             
                                 .last-listenen-play-icon {
-                                    width: 2.5em;
+                                    width: 40px;
                                     fill: #1DA1F2;
                                 }
                             }
@@ -89,12 +97,12 @@
                                 align-items: center;
                                 background-color: #1DA1F2;
                                 border: 1px solid transparent;
-                                border-radius: 50em;
-                                padding: .3em;
+                                border-radius: 100px;
+                                padding: 10px;
                                 cursor: pointer;
             
                                 .last-listenen-pause-icon {
-                                    width: 2.5em;
+                                    width: 40px;
                                     fill: #fff;
                                 }
                             }
@@ -103,11 +111,11 @@
                         .last-listenen-playback {
                             display: flex;
                             align-items: center;
-                            gap: 1em;
+                            gap: 15px;
             
                             .last-listenen-playback-time {
                                 color: #c7c5c5;
-                                font-size: 1em;
+                                font-size: 17px;
                                 font-weight: 500;
             
                                 &.active {
@@ -120,7 +128,7 @@
                                 background-color: #c7c5c5;
                                 width: 200px;
                                 height: 10px;
-                                border-radius: 1em;
+                                border-radius: 100px;
             
                                 .player-playback-bar {
                                     position: absolute;
@@ -128,7 +136,7 @@
                                     left: 0;
                                     background-color: #1DA1F2;
                                     height: 100%;
-                                    border-radius: 1em;
+                                    border-radius: 100px;
             
                                     .player-playback-bar-dot {
                                         position: absolute;
@@ -138,7 +146,7 @@
                                         width: 21px;
                                         height: 23px;
                                         border: 1px solid #dfdddd6e;
-                                        border-radius: 50em;
+                                        border-radius: 100px;
                                         visibility: hidden;
                                         opacity: 0;
                                     }

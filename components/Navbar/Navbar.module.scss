@@ -2,35 +2,35 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding: 3em;
-    width: 20em;
+    padding: 40px;
+    width: 300px;
     height: 100vh;
 
     .navbar-container {
         .logo-content {
             display: flex;
             justify-content: center;
-            margin: 0 0 2.5em 0;
+            margin: 0 0 30px 0;
         }
 
         .navbar-content {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 1em;
+            gap: 15px;
 
             .navbar-item {
                 display: flex;
                 align-items: center;
-                gap: .5em;
+                gap: 10px;
                 width: 100%;
-                padding: 1em;
+                padding: 20px;
                 transition: .3s all;
 
                 &.navbar-active, &:hover {
                     background-color: #fff;
                     box-shadow: 0px 6px 6px -1px #00000009;
-                    border-radius: .8em;
+                    border-radius: 10px;
                     cursor: pointer;
 
                     .navbar-item-icon {
@@ -43,14 +43,14 @@
                 }
 
                 .navbar-item-icon {
-                    width: 1.7em;
+                    width: 28px;
                     fill: none;
                     stroke: #00000093;
                     stroke-width: 2px;
                 }
 
                 a {
-                    font-size: 1.1em;
+                    font-size: 19px;
                     font-weight: 500;
                     color: #00000093;
                 }
