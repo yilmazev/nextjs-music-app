@@ -1,0 +1,28 @@
+#main {
+    margin: 0 1em 0 25em;
+    padding: 3em 0;
+    overflow: auto;
+    width: calc(100% - 45em);
+    height: calc(100vh - 144px);
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 1em;
+    }
+
+    &:hover {
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #c7c5c5;
+            border-color: #fdfdfd;
+            border-radius: 1em;
+        }
+    }
+}

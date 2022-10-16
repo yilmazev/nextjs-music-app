@@ -1,0 +1,53 @@
+#popular {
+    .popular-container {
+        .popular-title {
+            margin: 0 0 1em 0;
+
+            .popular-title-text {
+                color: #303030;
+                font-size: 1.8em;
+                font-weight: 500;
+
+                b {
+                    font-weight: 800;
+                }
+            }
+        }
+
+        .popular-albums {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            .popular-albums-item {
+                position: relative;
+
+                .popular-albums-cover-image {
+                    border-radius: 1.6em;
+                }
+                
+                .popular-albums-artist {
+                    position: absolute;
+                    left: 1em;
+                    bottom: 1em;
+                    display: flex;
+                    align-items: center;
+                    gap: .5em;
+                    background-color: #fff;
+                    border-radius: 50em;
+                    padding: .5em;
+
+                    .popular-albums-artist-avatar-image {
+                        border-radius: 50%;
+                    }
+
+                    .popular-albums-artist-full-name {
+                        color: #303030;
+                        font-size: 1em;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

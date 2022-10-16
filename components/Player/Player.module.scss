@@ -1,0 +1,209 @@
+#player {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px -6px 6px -1px #00000009;
+    padding: 2em 3em;
+    width: 100%;
+
+    .player-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+        
+        .player-column {
+            display: flex;
+            flex-direction: column;
+
+            .player-album {
+                display: flex;
+                align-items: center;
+                gap: 1.6em;
+
+                .player-album-image {
+                    border-radius: 50%;
+                }
+
+                .player-album-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5em;
+
+                    .player-album-name {
+                        color: #303030;
+                        font-size: 1.3em;
+                        font-weight: 600;
+                    }
+
+                    .player-album-artist {
+                        color: #00000093;
+                        font-size: 1em;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .player-controls {
+                display: flex;
+                align-items: center;
+                gap: .5em;
+
+                .player-previous-icon {
+                    width: 2.5em;
+                    fill: #c7c5c5;
+                    cursor: pointer;
+                }
+
+                .player-play-content {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #fff;
+                    border: 1px solid #dfdddd6e;
+                    border-radius: 50em;
+                    padding: .3em;
+                    cursor: pointer;
+
+                    .player-play-icon {
+                        width: 2.5em;
+                        fill: #1DA1F2;
+                    }
+                }
+
+                .player-pause-content {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #1DA1F2;
+                    border: 1px solid transparent;
+                    border-radius: 50em;
+                    padding: .3em;
+                    cursor: pointer;
+
+                    .player-pause-icon {
+                        width: 2.5em;
+                        fill: #fff;
+                    }
+                }
+
+                .player-next-icon {
+                    width: 2.5em;
+                    fill: #c7c5c5;
+                    cursor: pointer;
+                }
+            }
+
+            .player-playback {
+                display: flex;
+                align-items: center;
+                gap: 1em;
+
+                .player-playback-time {
+                    color: #c7c5c5;
+                    font-size: 1em;
+                    font-weight: 500;
+
+                    &.active {
+                        color: #303030;
+                    }
+                }
+
+                .player-playback-bar-content {
+                    position: relative;
+                    background-color: #c7c5c5;
+                    width: 300px;
+                    height: 10px;
+                    border-radius: 1em;
+
+                    .player-playback-bar {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: #1DA1F2;
+                        height: 100%;
+                        border-radius: 1em;
+
+                        .player-playback-bar-dot {
+                            position: absolute;
+                            right: -15px;
+                            top: -6px;
+                            background-color: #fff;
+                            width: 21px;
+                            height: 23px;
+                            border: 1px solid #dfdddd6e;
+                            border-radius: 50em;
+                            visibility: hidden;
+                            opacity: 0;
+                        }
+                    }
+
+                    &:hover {
+                        .player-playback-bar {
+                            .player-playback-bar-dot {
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .player-sound {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1em;
+
+                .player-sound-icon {
+                    width: 1.7em;
+                    fill: #303030;
+                }
+
+                .player-sound-progress-content {
+                    position: relative;
+                    background-color: #c7c5c5;
+                    width: 100px;
+                    height: 10px;
+                    border-radius: 1em;
+
+                    .player-sound-progress-bar {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: #1DA1F2;
+                        height: 100%;
+                        border-radius: 1em;
+
+                        .player-sound-progress-bar-dot {
+                            position: absolute;
+                            right: -15px;
+                            top: -6px;
+                            background-color: #fff;
+                            width: 21px;
+                            height: 23px;
+                            border: 1px solid #dfdddd6e;
+                            border-radius: 50em;
+                            visibility: hidden;
+                            opacity: 0;
+                        }
+                    }
+
+                    &:hover {
+                        .player-sound-progress-bar {
+                            .player-sound-progress-bar-dot {
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

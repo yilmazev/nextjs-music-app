@@ -1,0 +1,162 @@
+#listenen {
+    width: calc(100% - 400px);
+
+    .listenen-container {
+        .listenen-title {
+            margin: 0 0 1em 0;
+
+            .listenen-title-text {
+                color: #303030;
+                font-size: 1.8em;
+                font-weight: 500;
+
+                b {
+                    font-weight: 800;
+                }
+            }
+        }
+
+        .last-listenen {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            width: 100%;
+
+            .last-listenen-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #fff;
+                box-shadow: 0px 6px 6px -1px #00000009;
+                border-radius: 0.8em;
+                padding: 1em;
+                width: 100%;
+
+                .last-listenen-column {
+                    .last-listenen-album {
+                        display: flex;
+                        align-items: center;
+                        gap: 1.6em;
+        
+                        .last-listenen-album-image {
+                            border-radius: 50%;
+                        }
+        
+                        .last-listenen-album-text {
+                            display: flex;
+                            flex-direction: column;
+                            gap: .5em;
+        
+                            .last-listenen-album-name {
+                                color: #303030;
+                                font-size: 1.3em;
+                                font-weight: 600;
+                            }
+        
+                            .last-listenen-album-artist {
+                                color: #00000093;
+                                font-size: 1em;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    .last-listenen-player {
+                        display: flex;
+                        align-items: center;
+                        gap: 1.5em;
+
+                        .last-listenen-controls {
+                            .last-listenen-play-content {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #fff;
+                                border: 1px solid #dfdddd6e;
+                                border-radius: 50em;
+                                padding: .3em;
+                                cursor: pointer;
+            
+                                .last-listenen-play-icon {
+                                    width: 2.5em;
+                                    fill: #1DA1F2;
+                                }
+                            }
+            
+                            .last-listenen-pause-content {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #1DA1F2;
+                                border: 1px solid transparent;
+                                border-radius: 50em;
+                                padding: .3em;
+                                cursor: pointer;
+            
+                                .last-listenen-pause-icon {
+                                    width: 2.5em;
+                                    fill: #fff;
+                                }
+                            }
+                        }
+            
+                        .last-listenen-playback {
+                            display: flex;
+                            align-items: center;
+                            gap: 1em;
+            
+                            .last-listenen-playback-time {
+                                color: #c7c5c5;
+                                font-size: 1em;
+                                font-weight: 500;
+            
+                                &.active {
+                                    color: #303030;
+                                }
+                            }
+            
+                            .player-playback-bar-content {
+                                position: relative;
+                                background-color: #c7c5c5;
+                                width: 200px;
+                                height: 10px;
+                                border-radius: 1em;
+            
+                                .player-playback-bar {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    background-color: #1DA1F2;
+                                    height: 100%;
+                                    border-radius: 1em;
+            
+                                    .player-playback-bar-dot {
+                                        position: absolute;
+                                        right: -15px;
+                                        top: -6px;
+                                        background-color: #fff;
+                                        width: 21px;
+                                        height: 23px;
+                                        border: 1px solid #dfdddd6e;
+                                        border-radius: 50em;
+                                        visibility: hidden;
+                                        opacity: 0;
+                                    }
+                                }
+            
+                                &:hover {
+                                    .player-playback-bar {
+                                        .player-playback-bar-dot {
+                                            visibility: visible;
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
